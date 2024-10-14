@@ -12,6 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static org.example.models.Methods.mijo;
+import static org.example.models.Methods.sumSalarys;
+
 public class Main {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
@@ -24,13 +27,13 @@ public class Main {
         list.add(new Secretary("Jorge Carvalho", YearMonth.parse("01/2018",fmt1).atEndOfMonth()));
         list.add(new Secretary("Maria Souza", YearMonth.parse("12/2015",fmt1).atEndOfMonth()));
 
-
         list.add(new Seller("Ana Silva", YearMonth.parse("12/2021",fmt1).atEndOfMonth(),new double[]{5200, 4000, 4200, 5850, 7000}));
         list.add(new Seller("João Mendes", YearMonth.parse("12/2021",fmt1).atEndOfMonth(),new double[]{3400, 7700, 5000, 5900, 6500}));
 
         list.add(new Manager("Juliana Alves", YearMonth.parse("07/2017", fmt1).atEndOfMonth()));
         list.add(new Manager("Bento Albino", YearMonth.parse("03/2014", fmt1).atEndOfMonth()));
 
-        
+        System.out.println(sumSalarys(list));
+
     }
 }

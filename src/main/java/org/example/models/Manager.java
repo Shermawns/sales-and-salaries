@@ -16,4 +16,5 @@ public class Manager extends Employee{
         long yearsOnCompany = ChronoUnit.YEARS.between(getDateAdmit(),date);
         return salary + yearsOnCompany * 3000.00;
     }
+
 }

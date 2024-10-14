@@ -1,11 +1,15 @@
 package org.example.models;
 
 import java.time.LocalDate;
+import java.util.List;
+
 public class Employee {
     private String name;
     protected Double salary;
     protected LocalDate dateAdmit;
 
+    public Employee() {
+    }
 
     public Employee(String name, LocalDate dateAdmit) {
         this.name = name;
@@ -32,12 +36,4 @@ public class Employee {
         this.dateAdmit = dateAdmit;
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
-                ", salary=" + salary +
-                ", dateAdmit=" + dateAdmit +
-                '}';
-    }
 }

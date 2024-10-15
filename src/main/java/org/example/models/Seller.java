@@ -48,4 +48,5 @@ public class Seller extends Employee{
         long yearOnCompany = ChronoUnit.YEARS.between(getDateAdmit(), date);
         return salary + (yearOnCompany * 1800.00) + saleTotal();
     }
+
 }

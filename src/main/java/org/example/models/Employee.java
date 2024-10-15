@@ -1,7 +1,6 @@
 package org.example.models;
 
 import java.time.LocalDate;
-import java.util.List;
 
 public class Employee {
     private String name;

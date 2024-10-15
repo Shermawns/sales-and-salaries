@@ -1,9 +1,6 @@
 package org.example;
 
-import org.example.models.Employee;
-import org.example.models.Manager;
-import org.example.models.Secretary;
-import org.example.models.Seller;
+import org.example.models.*;
 
 import java.time.LocalDate;
 import java.time.YearMonth;
@@ -11,9 +8,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-import static org.example.models.Methods.mijo;
-import static org.example.models.Methods.sumSalarys;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,7 +27,10 @@ public class Main {
         list.add(new Manager("Juliana Alves", YearMonth.parse("07/2017", fmt1).atEndOfMonth()));
         list.add(new Manager("Bento Albino", YearMonth.parse("03/2014", fmt1).atEndOfMonth()));
 
-        System.out.println(sumSalarys(list));
+
+
+        System.out.println("Valor total pago em salários: " + Methods.sumSalarys(list));
+        System.out.println("Salário mais alto : " + Methods.getHighestSalary(list));
 
     }
 }
